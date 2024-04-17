@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import appflipped from '../assets/img/appflipped.png';
+import AnimatedShapes from './AnimatedShapes';
 
 const Container = styled.div`
     display: flex;
@@ -12,6 +13,8 @@ const Left = styled.div`
 
 const Image = styled.img`
     width: 80%;
+    height: 100%;
+    bottom: 0;
 `;
 
 const Right = styled.div`
@@ -73,6 +76,7 @@ const Feature = () => {
                 </Desc>
                 <Button>Learn More</Button>
             </Right>
+            <AnimatedShapes />
         </Container>
     )
 }
