@@ -29,7 +29,7 @@ const MenuItem = styled.li`
     font-size: 20px;
     font-weight: bold;
     color: gray;
-    // cursor: pointer;
+    cursor: pointer;
 `
 const Button = styled.button`
     border: 2px solid white;
