@@ -55,6 +55,7 @@ const Desc = styled.p`
 const CardContainer = styled.div`
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 50px;
 `;
 
@@ -102,6 +103,7 @@ const Service = () => {
                     </Desc>
 
                     <CardContainer>
+                        <MiniCard />
                         <MiniCard />
                         <MiniCard />
                         <MiniCard />
