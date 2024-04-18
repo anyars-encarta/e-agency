@@ -4,6 +4,8 @@ import Intro from "./components/Intro";
 import Feature from "./components/Feature";
 import Service from "./components/Service";
 import Price from "./components/Price";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 const Container = styled.div`
   height: 100vh;
@@ -68,6 +70,11 @@ const App = () => {
       <Container>
         <Price />
         <PriceShape />
+      </Container>
+
+      <Container>
+        <Contact />
+        <Footer />
       </Container>
     </>
   )
