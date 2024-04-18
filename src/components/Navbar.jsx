@@ -4,6 +4,9 @@ import { Link } from 'react-scroll';
 
 const Container = styled.div`
     height: 50px;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
 `
 const Wrapper = styled.div`
     padding: 10px 20px;
@@ -20,6 +23,7 @@ const Left = styled.div`
 const Logo = styled.h1`
     font-weight: bold;
     text-decoration: underline crimson;
+    cursor: pointer;
 `
 const Menu = styled.ul`
     display: flex;
