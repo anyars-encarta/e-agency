@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import How from '../assets/img/how.png';
 import MiniCard from './MiniCard';
 import Play from '../assets/img/play.png';
+import AnimatedShapes from './AnimatedShapes';
 
 const Container = styled.div`
     height: 100%;
@@ -111,6 +112,7 @@ const Service = () => {
                     <Button onClick={() => setOpen(true)}><PlayIcon src={Play} />How it Works</Button>
                 </Wrapper>
             </Right>
+            <AnimatedShapes />
         </Container>
     )
 };
