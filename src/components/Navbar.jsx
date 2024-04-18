@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-scroll';
 
 const Container = styled.div`
     height: 50px;
@@ -45,13 +46,19 @@ const Navbar = () => {
         <Container>
             <Wrapper>
                 <Left>
-                    <Logo>AnyarsAgency</Logo>
+                    {/* <Logo>AnyarsAgency</Logo> */}
+                    <Link to="intro" smooth={true} duration={500}><Logo>EncartaAgency</Logo></Link>
                     <Menu>
-                        <MenuItem>Home</MenuItem>
+                        {/* <MenuItem>Home</MenuItem>
                         <MenuItem>Features</MenuItem>
                         <MenuItem>Services</MenuItem>
                         <MenuItem>Pricing</MenuItem>
-                        <MenuItem>Contact</MenuItem>
+                        <MenuItem>Contact</MenuItem> */}
+                        <Link to="intro" smooth={true} duration={500}><MenuItem>Home</MenuItem></Link>
+                        <Link to="feature" smooth={true} duration={500}><MenuItem>Features</MenuItem></Link>
+                        <Link to="service" smooth={true} duration={500}><MenuItem>Services</MenuItem></Link>
+                        <Link to="price" smooth={true} duration={500}><MenuItem>Pricing</MenuItem></Link>
+                        <Link to="contact" smooth={true} duration={500}><MenuItem>Contact</MenuItem></Link>
                     </Menu>
                 </Left>
 

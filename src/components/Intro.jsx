@@ -64,7 +64,7 @@ const Image = styled.img`
 
 const Intro = () => {
   return (
-    <Container>
+    <Container id='intro'>
         <Left>
             <Title>Adventures in Creative Age</Title>
             <Desc>We beleive that designing products and services in close partnership

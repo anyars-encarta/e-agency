@@ -57,7 +57,7 @@ const Button = styled.button`
 
 const Feature = () => {
     return (
-        <Container>
+        <Container id='feature'>
             <Left><Image src={appflipped} /></Left>
 
             <Right>
