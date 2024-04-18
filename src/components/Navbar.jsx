@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import { Link } from 'react-scroll';
 
 const Container = styled.div`
-    height: 50px;
+    background-color: rgba(220, 20, 60, 0.5);
+    height: 70px;
     position: fixed;
     width: 100vw;
     z-index: 1;
@@ -33,7 +34,7 @@ const MenuItem = styled.li`
     margin-right: 30px;
     font-size: 20px;
     font-weight: bold;
-    color: gray;
+    color: white;
     cursor: pointer;
 `
 const Button = styled.button`

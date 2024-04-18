@@ -4,7 +4,7 @@ import man from '../assets/img/man.png';
 import AnimatedShapes from './AnimatedShapes';
 
 const Container = styled.div`
-    height: calc(100vh - 50px);
+    height: calc(100vh - 70px);
     display: flex;
     padding: 20px;
 `;
