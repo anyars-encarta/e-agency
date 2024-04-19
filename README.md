@@ -71,7 +71,7 @@
 
 LIVE DEMO
 
-> View the [live](https://anyars-encarta.github.io/expense-tracker/) page of the project here.
+> View the [live](https://e-agency-anyars-yussifs-projects.vercel.app/) page of the project here.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
