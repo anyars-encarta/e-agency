@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
+import { motion } from 'framer-motion';
 
 const Container = styled.div`
     background-color: rgba(220, 20, 60, 0.5);
@@ -21,6 +22,7 @@ const Left = styled.div`
     align-items: center;
     justify-content: space-between;
 `
+
 const Logo = styled.h1`
     font-weight: bold;
     text-decoration: underline crimson;
@@ -29,6 +31,10 @@ const Logo = styled.h1`
 const Menu = styled.ul`
     display: flex;
     list-style-type: none;
+
+    @media only screen and (max-width: 480px) {
+        display: none;
+    }
 `
 const MenuItem = styled.li`
     margin-right: 30px;
@@ -47,12 +53,13 @@ const Button = styled.button`
     cursor: pointer;
 `
 const Navbar = () => {
+    const [toggle, setToggle] = useState(false);
+
     return (
         <Container>
             <Wrapper>
                 <Left>
-                    {/* <Logo>AnyarsAgency</Logo> */}
-                    <Link to="intro" smooth={true} duration={500}><Logo>EncartaAgency</Logo></Link>
+                    <Link to="intro" smooth={true} duration={500}><Logo>E-Agency</Logo></Link>
                     <Menu>
                         {/* <MenuItem>Home</MenuItem>
                         <MenuItem>Features</MenuItem>
@@ -67,7 +74,7 @@ const Navbar = () => {
                     </Menu>
                 </Left>
 
-                    <Button>JOIN TODAY</Button>
+                <Button>JOIN TODAY</Button>
             </Wrapper>
         </Container>
     )
