@@ -2,7 +2,7 @@
   "name": "website-1",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://anyars-encarta.github.io/e-agency",
+  "homepage": "https://anyars-encarta.github.io/e-agency/",
   "type": "module",
   "scripts": {
     "dev": "vite",
