@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-scroll';
+import { motion } from 'framer-motion';
 
 const Container = styled.div`
-    height: 50px;
+    background-color: rgba(220, 20, 60, 0.5);
+    height: 70px;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
 `
 const Wrapper = styled.div`
     padding: 10px 20px;
@@ -16,19 +22,25 @@ const Left = styled.div`
     align-items: center;
     justify-content: space-between;
 `
+
 const Logo = styled.h1`
     font-weight: bold;
     text-decoration: underline crimson;
+    cursor: pointer;
 `
 const Menu = styled.ul`
     display: flex;
     list-style-type: none;
+
+    @media only screen and (max-width: 480px) {
+        display: none;
+    }
 `
 const MenuItem = styled.li`
     margin-right: 30px;
     font-size: 20px;
     font-weight: bold;
-    color: gray;
+    color: white;
     cursor: pointer;
 `
 const Button = styled.button`
@@ -41,21 +53,28 @@ const Button = styled.button`
     cursor: pointer;
 `
 const Navbar = () => {
+    const [toggle, setToggle] = useState(false);
+
     return (
         <Container>
             <Wrapper>
                 <Left>
-                    <Logo>AnyarsAgency</Logo>
+                    <Link to="intro" smooth={true} duration={500}><Logo>E-Agency</Logo></Link>
                     <Menu>
-                        <MenuItem>Home</MenuItem>
+                        {/* <MenuItem>Home</MenuItem>
                         <MenuItem>Features</MenuItem>
                         <MenuItem>Services</MenuItem>
                         <MenuItem>Pricing</MenuItem>
-                        <MenuItem>Contact</MenuItem>
+                        <MenuItem>Contact</MenuItem> */}
+                        <Link to="intro" smooth={true} duration={500}><MenuItem>Home</MenuItem></Link>
+                        <Link to="feature" smooth={true} duration={500}><MenuItem>Features</MenuItem></Link>
+                        <Link to="service" smooth={true} duration={500}><MenuItem>Services</MenuItem></Link>
+                        <Link to="price" smooth={true} duration={500}><MenuItem>Pricing</MenuItem></Link>
+                        <Link to="contact" smooth={true} duration={500}><MenuItem>Contact</MenuItem></Link>
                     </Menu>
                 </Left>
 
-                    <Button>JOIN TODAY</Button>
+                <Button>JOIN TODAY</Button>
             </Wrapper>
         </Container>
     )
