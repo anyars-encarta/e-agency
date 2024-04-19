@@ -64,7 +64,7 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.h1`
-    // font-size: 70px;
+    margin-top: 20px;
 `;
 
 const Desc = styled.p`
