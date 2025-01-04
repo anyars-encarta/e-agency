@@ -41,7 +41,7 @@
 
 > E-Agency is template website design to represent a replica of a real life agency website. It is design to show the various pages with a Nav menu links that scroll to specific pages of the website.
 >
-> It is design to show the various pages with a
+> It is design to show the various pages with
 
 
 ## 🛠 Built With <a name="built-with"></a>
