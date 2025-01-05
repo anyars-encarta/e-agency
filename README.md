@@ -39,7 +39,7 @@
 <!-- INTRO -->
 # 📖 E-Agency<a name="about-project"></a>
 
-> E-Agency is template website design to represent a replica of a real life agency website. It is design to show the various pages with a Nav menu links that scroll to specific pages of the website. Built with
+> E-Agency is template website design to represent a replica of a real life agency website. It is design to show the various pages with a Nav menu links that scroll to specific pages of the website. Built
 
 ## 🛠 Built With <a name="built-with"></a>
 1. React
